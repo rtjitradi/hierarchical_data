@@ -88,3 +88,5 @@ Full Marks
 No Marks
 2.0 pts
 Total Points: 15.0
+
+superuser (username: reggy / password: asdf)
