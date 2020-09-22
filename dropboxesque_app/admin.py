@@ -1,6 +1,7 @@
 from django.contrib import admin
-from dropboxesque_app.models import DropboxesqueModel
 from mptt.admin import DraggableMPTTAdmin
+
+from dropboxesque_app.models import DropboxesqueModel
 
 
 # Register your models here.

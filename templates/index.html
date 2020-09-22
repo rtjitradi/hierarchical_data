@@ -1,4 +1,13 @@
-{% load mptt_tags %}
+<h1>DropboxEsque</h1>
+<br>
+<br>
+<a href="{% url 'login' %}">Login</a>
+<br>
+<a href="{% url 'create' %}">Create New Folder &/ File</a>
+<br> {% if request.user.is_authenticated %}
+<h2>{{ request.user.username }}' Folder(s) & File(s):</h2>
+{% endif %}
+<br> {% load mptt_tags %}
 <ul>
     {% recursetree branches %}
     <li>
@@ -10,3 +19,7 @@
     </li>
     {% endrecursetree %}
 </ul>
+
+<br>
+<br>
+<a href="{% url 'logout' %}">Logout</a>
